@@ -358,7 +358,7 @@ text-align:center;}
     background-color:rgb(68, 68, 68);
     height:50vh;
     width:100%;
-    padding-left:40px;
+    /* padding-left:40px; */
     align-items: center;
     align-content: center;
     justify-items: center;
