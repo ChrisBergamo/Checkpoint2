@@ -86,7 +86,7 @@ body {
     display:flex;
     grid-row:3;
     background-color:rgb(68, 68, 68);
-    height:40vh;
+    height:100%;
     width:100%;
     /* padding-left:40px; */
     align-items: center;
@@ -94,6 +94,7 @@ body {
     justify-items:center;
     justify-content: center;
     text-align: center;
+    overflow:hidden;
 
 
 }
