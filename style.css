@@ -194,7 +194,7 @@ a:active{color:whitesmoke}
     width: 0; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
-    background-color:rgba(96, 139, 189, 0.5);
+    background-color:rgb(96, 139, 189);
     background-blend-mode: color-burn;
     overflow: hidden; /* Disable horizontal scroll */
      /* Place content 60px from the top */
@@ -358,7 +358,7 @@ text-align:center;}
     grid-column: 1 / 3;
     grid-row: 3;
     display:flex;
-    background-color:rgb(68, 68, 68);
+    background-color:antiquewhite;
     height:50vh;
     width:100%;
     /* padding-left:40px; */
@@ -375,7 +375,7 @@ text-align:center;}
     grid-row: 4;
     display:flex;
     flex-direction: column;
-    background-color:rgb(68, 68, 68);
+    background-color:antiquewhite;
     height:100%;
     width:100%;
     align-items: center;
