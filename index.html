@@ -2,6 +2,7 @@
 <html>
 <head>
         <!-- <span onclick="openNav()">open</span> -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Notable" rel="stylesheet"> 
@@ -22,15 +23,9 @@
             <div class="title">
             <h1>Chris Bergamo</h1>
             <h2>Full Stack Web Developer</h2>
-            <a href="#item2">let's look around.</a></div>
+            <ul><a href="#item2">let's look around.</a></div></ul>
             <div class="line1"></div>
             <div class="line2"></div>
-            <!-- <div class="line3"></div>
-            <div class="line4"></div>
-            <div class="line5"></div>
-            <div class="line6"></div>
-            <div class="line7"></div>
-            <div class="line8"></div> -->
         </div>
         <div class="item2">
             <div id="item2">
@@ -39,15 +34,39 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="space"></div>
         <a href="#"><a href="#item3">My Work</a>
-        <a href="mailto:chrstphrbrgmo@gmail.com">Contact</a>  
+        <a href="https://www.linkedin.com/in/christopherbergamo/">LinkedIn</a>  
+        <a href="https://github.com/ChrisBergamo">GitHub</a>  
         <a href="#">Home</a>
       </div>
       <span style="font-size:30px;cursor:pointer;padding-left: 20px;padding-top: 10px;" onclick="openNav()">&#9776;</span>
       <div id="main">
           <div class="aboutme">
-     I'm an aspiring full stack web developer, fluent in HTML, CSS
-    and learning Javascript! I currently specialize in clean, responsive and mobile ready web design.
-   Upon continuing my education I plan to get into app development. I am currently available and taking on jobs. 
+     I'm a full stack web developer, fluent in HTML, CSS
+    and Javascript! <br>I specialize in clean, responsive and mobile ready web design.<br>
+    I am currently available and taking on jobs. <br><br> Contact me
+   <!-- contact form!!!! --></div>
+ 
+   <div class="container"> 
+        <form id="contact" action="" method="post">
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
  </div>
 </div>
       <script>
@@ -68,13 +87,13 @@
         </div>
     <div class="item4">
         <div class="gallery">
+                
                 <div class="linkholder"><div class="pic1"><a target="_blank" href="images/pic1.jpg"><img src="images/pic1.jpg"></a><img src="images/save1.png"><img src="images/share1.png"><img src="images/heart1.png"></div></div>
                 <div class="linkholder"><div class="pic2"><a target="_blank" href="images/pic2.jpg"><img src="images/pic2.jpg"></a><img src="images/save1.png"><img src="images/share1.png"><img src="images/heart1.png"></div></div>
                 <div class="linkholder"><div class="pic3"><a target="_blank" href="images/pic3.jpg"><img src="images/pic3.jpg"></a><img src="images/save1.png"><img src="images/share1.png"><img src="images/heart1.png"></div></div>
                 <div class="linkholder"><div class="pic4"><a target="_blank" href="images/pic4.jpg"><img src="images/pic4.jpg"></a><img src="images/save1.png"><img src="images/share1.png"><img src="images/heart1.png"></div></div>
         </div>
     </div>
-    
-
+<footer><br><br>C.Bergamo <br> 2018 </footer>
 </body>
 </html>

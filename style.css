@@ -7,6 +7,7 @@ body {
     width: 100%;
     height:100%;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 .gridwrapper{
     display:grid;
@@ -62,7 +63,7 @@ body {
     color:whitesmoke;
     overflow:hidden;
     font-family: 'Notable', sans-serif;
-    animation: mymove 5s infinite;
+    animation: mymove 45s infinite;
 }
 
 .item2 {display:flex;
@@ -80,6 +81,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 90;
     /* background-image: url(../checkpoint2/images/water.jpg); */
 }
 .item3 {
@@ -94,12 +96,13 @@ body {
     justify-items:center;
     justify-content: center;
     text-align: center;
-    overflow:hidden;
+    /* overflow:hidden; */
+    z-index:85;
 
 
 }
 .item4 {
-    /* grid-column: 2 / 3; */
+    grid-column: 2 / 3;
     grid-row: 4;
     display:flex;
     flex-direction: column;
@@ -112,6 +115,7 @@ body {
     /* justify-items: center; */
     /* justify-content: center; */
     text-align: center;
+    z-index:85;
 }
 .gallery{
     /* padding-top:10px; */
@@ -131,7 +135,7 @@ body {
 
 }
 .pic1{
-    height:100;
+    height:auto;
     width:100%;
 }
 .pic2{
@@ -148,7 +152,8 @@ body {
     width:100%;
 }
 img{
- max-width:100%
+ max-width:100%;
+ height:auto;
 }
 .stack {
     display:flex;
@@ -168,8 +173,14 @@ img{
 
 hr{background-color: white}
 
-h1{color:whitesmoke}
-h2{color:whitesmoke}
+h1{
+    color:whitesmoke;
+font-size:5em;}
+h2{color:whitesmoke;
+    /* text-align: right;
+    margin-right: 10px;
+margin-top: 20px; */
+}
 h3{
     font-size: 100px;
     color:floralwhite;
@@ -194,7 +205,7 @@ a:active{color:whitesmoke}
     width: 0; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
-    background-color:rgb(96, 139, 189);
+    background-color:rgb(40, 50, 61);
     background-blend-mode: color-burn;
     overflow: hidden; /* Disable horizontal scroll */
      /* Place content 60px from the top */
@@ -205,7 +216,7 @@ a:active{color:whitesmoke}
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2em;
     color: whitesmoke;
     display: block;
     transition: 0.3s;
@@ -221,7 +232,7 @@ a:active{color:whitesmoke}
     position: absolute;
     top: 0;
     right: 15px;
-    font-size: 25px;
+    font-size: 2em;
     margin-left: 50px;
     color: #f1f1f1;
 }
@@ -234,21 +245,26 @@ a:active{color:whitesmoke}
     padding: 20px;
     color:whitesmoke;
     display:flex;
-    flex-direction:row;
-    justify-content: center;
-    justify-items: center;
-    align-items:center;
+    flex-direction:column;
+    justify-content: right;
+    justify-items: right;
+    align-items: flex-end;
     align-content:center;
 
 }
-.aboutme{
+.aboutme{top:100px;
     display:flex;
     flex-direction: column;
+    justify-content: end;
+    align-content: flex-end;
+    justify-items: flex-end;
+    align-items: flex-end;
+    text-align: right;
     color:#f1f1f1;
-    font-size: 4em;
-    width:50%;
+    font-size: 2em;
+    width:40vw;
     height:100%;
-    grid-area: "aboutme";
+    margin-right: 10px;
 }
 .aboutyou{
     display:flex;
@@ -269,49 +285,64 @@ a:active{color:whitesmoke}
     text-align: right;
 }
 .line1{
-    background-color:rgb(66, 189, 189);
+    background-color:#3D99CC;
     height:40px;
     width:300px;
     opacity:0;
-    /* background-image: url(./images/water.jpg) */
-    /* animation: mymove2 5s infinite; */
+    background-image: url(./images/water.jpg) */
+    /* animation: mymove2 5s infinite;
 }
 .line2{
-    background-color:rgb(66, 189, 189);
+    background-color:#CC3D45;
     height:30px;
     width:330px;
     opacity:0;
     /* background-image: url(./images/water.jpg) */
 }
 .line3{
-    background-color:rgb(66, 189, 189);
+    background-color:#65FFE3;
     height:60px;
     width:350px;
 }
 .line4{
-    background-color:rgb(66, 189, 189);
+    background-color:#FFB1A5;
     height:20px;
     width:400px;
 }
 .item1:hover > .line1{
     transform:scale(20) translateX(-10px)rotate(-450deg)skewX(8deg);
-    transition: all 10s ease-out ;
+    transition: all 3s ease-out ;
     opacity:1}
     .item1:hover > .line2{
         transform:scale(16) translateX(5px) rotate(33deg) skewX(82deg);
-        transition: all 10s ease-out;
+        transition: all 3s ease-out;
     opacity:1}
-.title {z-index:1000;
+.title {z-index:80;
+    position:fixed;
 text-align:center;}
+
+
+/* 
+*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
+*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
+*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*!*
+          First Media Query */
+
+
+
 @media (min-width:768px){
+
+        
+    }
 .gallery{
+    /* this SHIT has to gp */
         grid-template-areas:
         "pic1 pic2"
         "pic3 pic4"
     }
 .gridwrapper{
     display:grid;
-    background-color:lightcoral;
+    background-color:rgb(24, 24, 24);
     height:100vh;
     /* gap:1em; */
     grid-template-columns: 1fr 1fr;
@@ -325,7 +356,7 @@ text-align:center;}
 .item1 {
     grid-column: 1 / 3;
     grid-row: 1;
-    background-color:rgb(71, 204, 204);
+    background-color:rgb(24, 24, 24);
     height:100vh;
     width:100%;
     display: flex;
@@ -334,7 +365,7 @@ text-align:center;}
     justify-content: center;
     color:whitesmoke;
     overflow:hidden;
-    animation: mymove 15s infinite;
+    animation: mymove 35s infinite;
 }
 
 .item2 {display:grid;
@@ -346,9 +377,9 @@ text-align:center;}
     width:100%;
     color:#f1f1f1;
     text-shadow: 0px 0px #333333;
-    font-family: 'Overpass Mono', monospace;
+    font-family: 'Quicksand', sans-serif;
     font-size: 8px;
-    background-image: url(./images/trinity.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(./images/trinity.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -358,8 +389,8 @@ text-align:center;}
     grid-column: 1 / 3;
     grid-row: 3;
     display:flex;
-    background-color:antiquewhite;
-    height:50vh;
+    background-color:rgb(23, 43, 54);
+    height:100%;
     width:100%;
     /* padding-left:40px; */
     align-items: center;
@@ -375,7 +406,7 @@ text-align:center;}
     grid-row: 4;
     display:flex;
     flex-direction: column;
-    background-color:antiquewhite;
+    background-color:rgb(23, 43, 54);
     height:100%;
     width:100%;
     align-items: center;
@@ -386,7 +417,7 @@ text-align:center;}
 }
 .gallery{
     /* padding-top:10px; */
-    display:grid;
+    /* display:grid; */
     grid-gap:1em;
     padding:20px;
     height:100%;
@@ -396,22 +427,154 @@ text-align:center;}
     justify-content: center;
     grid-template-areas:
     "pic1 pic2"
-    "pic3 pic4"
+    "pic3 pic4";
 }
+
+footer{
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+    align-items:center;
+    background-color: rgb(39, 35, 53);
+    text-align:center;
+    width:100vw;
+    height:10vh;
+    color:rgb(124, 124, 124);
+}
+/* contact form */
+.container {
+    bottom: 10px;
+    right:10px;
+    max-width: 400px;
+    width: 100%;
+    line-height: 1em;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea,
+  #contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  }
+  
+  #contact {
+    padding: 25px;
+    margin-right: 10px;
+
+  }
+  
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+
+  }
+  
+  #contact h4 {
+
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.527);
+    margin: 0 0 5px;
+    padding: 10px;
+  }
+  
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+  
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 106%;
+    border: none;
+    background: rgb(39, 35, 53);
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  
+  #contact button[type="submit"]:hover {
+    background: rgb(43, 46, 43);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+
+  }
+  
+  ::-webkit-input-placeholder {
+    color: rgb(39, 35, 53);
+  }
+  
+  :-moz-placeholder {
+    color: rgb(39, 35, 53);;
+  }
+  
+  ::-moz-placeholder {
+    color: rgb(39, 35, 53);;
+  }
+  
+  :-ms-input-placeholder {
+    color:  rgb(39, 35, 53);;
+  }
+
+
 @keyframes mymove {
-0% {background-color: coral;}
-25% {background-color:orange;}
-50% {background-color:rgb(255, 66, 66)}
-75% {background-color:rgb(32, 218, 156);}
-100%{background-color:coral;}
+0% {background-color: #171a19;}
+25% {background-color:#337F71;}
+50% {background-color:rgb(22, 92, 79);}
+75% {background-color:#194039;}
+100%{background-color:rgb(76, 88, 86);}
 }
 
 @keyframes mymove2 {
-    0% {
-        background-color: rgb(80, 220, 255);}
-    25% {
-        background-color:rgb(107, 154, 255);}
-    50% {background-color:rgb(111, 255, 200)}
-    75% {background-color:rgb(80, 255, 103);}
-   100% {background-color: rgb(80, 220, 255);}
-}
+    0% {background-color: #171a19;}
+    25% {background-color:#337F71;}
+    50% {background-color:rgb(22, 92, 79);}
+    75% {background-color:#194039;}
+    100%{background-color:rgb(76, 88, 86);
+    }
